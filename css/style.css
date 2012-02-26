@@ -1,0 +1,411 @@
+/* Form Style */
+
+div.box {
+margin:0 auto;
+width:650px;
+background:#222222;
+position:relative;
+top:50px;
+border:1px solid #262626;
+
+
+}
+
+
+div.box .input_text {
+padding:15px 10px;
+width:400px;
+background:#262626;
+border-bottom: 1px double #171717;
+border-top: 1px double #171717;
+border-left:1px double #333333;
+border-right:1px double #333333;
+color:#fff;
+}
+
+div.box label {
+width:100%;
+display: block;
+background:#1C1C1C;
+border-top:1px solid #262626;
+border-bottom:1px solid #161712;
+padding:10px 0 10px 0;
+}
+
+div.box label span {
+display: block;
+color:#bbbbbb;
+font-size:15px;
+float:left;
+width:100px;
+text-align:right;
+padding:5px 20px 0 0;
+}
+
+div.box .button
+{
+margin:0 0 10px 0;
+padding:4px 7px;
+background:#CC0000;
+border:0px;
+position: relative;
+top:20px;
+left:35px;
+width:120px;
+border-bottom: 1px double #660000;
+border-top: 1px double #660000;
+border-left:1px double #FF0033;
+border-right:1px double #FF0033;
+}
+
+div.box h1 { 
+color:#ffffff;
+font-size:18px;
+text-transform:uppercase;
+padding:5px 0 5px 5px;
+border-bottom:1px solid #161712;
+border-top:1px solid #161712; 
+}
+
+/* FORM 2 STYLE */
+
+
+/* END OF FORM STYLE */
+
+/* INDEX HEADER STYLE */
+
+#tab
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background: url(../images/tab.png);
+    width:1366px;
+    height:30px;
+    
+    
+    
+}
+
+#head{
+    
+    position:absolute;
+    top:30px;
+    left:-3px;
+    background:url(../images/new.png);
+    width:901px;
+    height:672px;
+    
+    
+    
+}
+
+/* END OF INDEX HEADER STYLE */
+
+p.error
+{
+    position:absolute;
+    top:100px;
+    left:400px;
+}
+
+
+
+
+/* MAIN PAGE TOP MAIN */
+
+
+#home{
+    position:absolute;
+    top:5px;
+    left:20px;
+}
+
+#reg_sch{
+    
+    position:absolute;
+    top:5px;
+    left:980px;
+}
+
+#reg_stu
+{
+  position:absolute;
+  top:5px;
+  left:820px;  
+}
+
+#reg_teach{
+    
+    position:absolute;
+    top:5px;
+    left:1140px;
+}
+
+
+#school{
+    position:absolute;
+    top:5px;
+    left:100px;
+}
+
+#Teachers{
+    position:absolute;
+    top:5px;
+    left:200px;
+}
+
+#studenttab{
+    
+    position:absolute;
+    top:5px;
+    left:300px;
+    
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px #E2F4FD;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.20;
+	filter: alpha(opacity=80);
+}
+
+
+/* TABLE STYLE */
+
+table.reference
+{
+background-color:#ffffff;
+border:1px solid #c3c3c3;
+border-collapse:collapse;
+width:100%;
+font-family:serif;
+}
+
+table.reference th
+{
+background-color:#e5eecc;
+border:1px solid #c3c3c3;
+padding:3px;
+vertical-align:top;
+}
+
+table.reference td 
+{
+border:1px solid #c3c3c3;
+padding:3px;
+vertical-align:top;
+height:20px;
+}
+
+/* END OF TABLE STYLE */
+
+.bodyi{
+    overflow-x:hidden;
+}
+
+
+#left{
+    position:absolute;
+    top:100px;
+    left:966px;
+    background-image:url(../images/left.png);
+    width:400px;
+    height:600px;
+}
+
+
+
+
+#sch_despace{
+        position:absolute;
+        top:130px;
+        left:200px;
+        width:875px;
+        background-color:#fff;
+        border:1px solid #cccccc;
+        
+}
+
+
+#round{
+position:absolute;
+top:100px;
+left:200px;
+height: 30px;
+width:878px;
+-moz-border-radius-topleft:15px;
+-moz-border-radius-topright:15px;
+-border-radius-topleft:15px;
+-border-radius-topright:15px;
+background-color: #AAE4FA;
+
+}
+
+#round_title{
+position:absolute;
+top:102px;
+left:210px;
+font-family:ssans-serif;
+
+}
+
+h3.left{
+
+        display:block;
+        font-family:sans-serif;
+        color:#666666;
+}
+
+#round2{
+position:absolute;
+top:2px;
+left:50px;
+height: 45px;
+width:770px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #AAE4FA;
+-moz-border-radius-bottomleft:10px;
+-moz-border-radius-bottomright:10px;
+-border-radius-bottomleft:10px;
+-border-radius-bottomright:10px;
+}
+
+#round2_title{
+position:absolute;
+top:15px;
+left:70px;
+font-family:sans-serif;
+font-size:20px;
+color:#666666;
+
+}
+
+#round_menu1{
+position:absolute;
+top:6px;
+left:55px;
+height: 40px;
+width:150px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #fff;
+
+}
+
+#round_menu1_title{
+position:absolute;
+top:15px;
+left:235px;
+font-family:sans-serif;
+font-size:20px;
+color:#666666;
+}
+#round_menu2{
+position:absolute;
+top:6px;
+left:212px;
+height: 40px;
+width:150px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #fff;
+
+}
+
+#round_menu2_title{
+position:absolute;
+top:15px;
+left:380px;
+font-family:ssans-serif;
+font-size:20px;
+color:#666666;
+}
+
+#round_menu3{
+position:absolute;
+top:6px;
+left:367px;
+height: 40px;
+width:150px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #fff;
+
+}
+
+#round_menu4{
+position:absolute;
+top:6px;
+left:522px;
+height: 40px;
+width:150px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #fff;
+
+}
+
+#round_menu5{
+position:absolute;
+top:6px;
+left:677px;
+height: 40px;
+width:140px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-border-radius-topleft:10px;
+-border-radius-topright:10px;
+background-color: #fff;
+
+}
+
+/* LINK DECORATION SECTION */
+
+a.one:link{
+    text-decoration:none;
+    color:#666;
+}
+
+a.one:visited
+{
+    text-decoration:none;
+    color:#666;
+}
+
+
+
+
+

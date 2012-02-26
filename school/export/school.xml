@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<schools><school>
+<details>
+ <name><![CDATA[Lajos Iskola gymnasium]]></name>
+<om_id><![CDATA[87jk90]]></om_id>
+<type><![CDATA[Gynessum]]></type>
+<status><![CDATA[partner]]></status>
+<contact><![CDATA[Debreceni Egytem]]></contact>
+</details>
+<address>
+<street><![CDATA[43 Piac utca]]></street>
+<city><![CDATA[Debrecen]]></city>
+<county><![CDATA[Hajdu-Bihar]]></county>
+<zip><![CDATA[4025]]></zip>
+<phone><![CDATA[2147483647]]></phone>
+<email><![CDATA[lajos@iskola.com]]></email>
+<website><![CDATA[www.lajosiskola.com]]></website>
+</address>
+</school>
+</schools>
