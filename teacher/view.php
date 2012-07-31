@@ -1,5 +1,5 @@
 <?php
-
+/**
 require_once "function2.php";
 $IDs = getArray();
 ?>
@@ -53,3 +53,28 @@ style="text-decoration:none; color:#666666; "><b>Studies Data</b></a></div>
  
  <div id="round2_title"><a href="" class="one">Details</a></div> 
 </div>
+
+*/ 
+
+<?php 
+
+public function createT($name, $email, $fax, $office, $contact, $title, $bio, $education, $pub, $last_pub, $general_info, $photo)
+{
+	$db = new db;
+	$db->connect();
+	
+	$sql = mysql_query("INSERT INTO teacher (name, email, fax, office, contact, title, bio,
+	education, pub,last_pub, general_info,photo) values ('$name', '$email', '$fax', '$office', '$contact', 
+	'$title', '$bio', '$education', '$pub', '$last_pub', '$general_info','$photo')");
+	
+	if ($sql)
+	{
+	return true;	
+	}
+	else
+	{
+	return false;
+	}
+}
+
+?>
