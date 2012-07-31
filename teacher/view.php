@@ -58,13 +58,13 @@ style="text-decoration:none; color:#666666; "><b>Studies Data</b></a></div>
 
 <?php 
 
-public function createT($name, $email, $fax, $office, $contact, $title, $bio, $education, $pub, $last_pub, $general_info, $photo)
+public function createProfile($name, $email, $fax,$phone, $office, $contact, $title, $bio, $education, $pub, $last_pub, $general_info, $photo)
 {
 	$db = new db;
 	$db->connect();
 	
-	$sql = mysql_query("INSERT INTO teacher (name, email, fax, office, contact, title, bio,
-	education, pub,last_pub, general_info,photo) values ('$name', '$email', '$fax', '$office', '$contact', 
+	$sql = mysql_query("INSERT INTO teacher (name, email, fax,phone, office, contact, title, bio,
+	education, pub,last_pub, general_info,photo) values ('$name', '$email', '$fax','$phone', '$office', '$contact', 
 	'$title', '$bio', '$education', '$pub', '$last_pub', '$general_info','$photo')");
 	
 	if ($sql)
@@ -77,7 +77,7 @@ public function createT($name, $email, $fax, $office, $contact, $title, $bio, $e
 	}
 }
 
-public function createProfile($user)
+public function getProfile($user)
 {
 	$db = new db;
 	$db->connect();
@@ -87,12 +87,20 @@ public function createProfile($user)
 	if($sql)
 	{
 		$row = mysql_fetch_array($sql);
-		$name =
-		$email =
-		$fax =
-		$contact=
-		$phone=
+		$name = $row['name'];
+		$email = $row['email'];
+		$fax = $row['fax'];
+		$contact= $row['contact'];
+		$phone= $row['phone'];
+		$office= $row['office'];
+		$title = $row['title'];
+		$bio = $row['bio'];
+		$education = $row['education'];
+		$publ = $row['pub'];
+		$photo = $row['photo'];
+		$general_info = $row['general_info'];
 		
+return array($name, $email, $fax, $contact, $phone, $office, $title, $bio, $education, $publ, $photo, $general_info);
 		
 		
 	}
