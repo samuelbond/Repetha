@@ -77,4 +77,83 @@ public function createT($name, $email, $fax, $office, $contact, $title, $bio, $e
 	}
 }
 
+public function createProfile($user)
+{
+	$db = new db;
+	$db->connect();
+	
+	$sql = mysql_query("SELECT * FROM user WHERE username='$user'");
+	
+	if($sql)
+	{
+		$row = mysql_fetch_array($sql);
+		$name =
+		$email =
+		$fax =
+		$contact=
+		$phone=
+		
+		
+		
+	}
+	else
+	{
+		return false;
+	}
+}
+
+public function isTeacher($user)
+{
+	$db = new db;
+	$db->connect();
+	
+	$sql = mysql_query("SELECT * FROM user WHERE username='$user'");
+	
+	if($sql)
+	{
+		$row = mysql_fetch_array($sql);
+		$type = $row['type'];
+		
+		if ($type == "teacher")
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
+
+public function isAdmin($user)
+{
+	$db = new db;
+	$db->connect();
+	
+	$sql = mysql_query("SELECT * FROM user WHERE username='$user'");
+	
+	if($sql)
+	{
+		$row = mysql_fetch_array($sql);
+		$type = $row['type'];
+		
+		if ($type == "admin")
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
+
 ?>
